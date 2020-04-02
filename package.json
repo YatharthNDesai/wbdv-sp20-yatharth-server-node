@@ -2,7 +2,7 @@
   "name": "wbdv-sp20-yatharth-server-node",
   "version": "1.0.0",
   "description": "Node server Application",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
