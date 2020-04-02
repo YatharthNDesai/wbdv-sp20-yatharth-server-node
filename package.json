@@ -2,9 +2,10 @@
   "name": "wbdv-sp20-yatharth-server-node",
   "version": "1.0.0",
   "description": "Node server Application",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [
     "node",
@@ -13,6 +14,7 @@
   "author": "Yatharth",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   }
 }
