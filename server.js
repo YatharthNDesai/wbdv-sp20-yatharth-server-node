@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-
+app.get('/', (req, res) => res.send('hello world!'))
 require('./controllers/quizzes.controller.server')(app)
 require('./controllers/questions.controller.server')(app)
 
