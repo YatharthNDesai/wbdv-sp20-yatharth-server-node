@@ -20,6 +20,16 @@ app.use(function(req, res, next) {
     next();
 });
 
+
+var connectionString = 'mongodb://127.0.0.1:27017/test';
+if(process.env.MLAB_USERNAME_WEBDEV) {
+    var username = process.env.MLAB_USERNAME_WEBDEV;
+    var password = process.env.MLAB_PASSWORD_WEBDEV;
+    connectionString = 'mongodb://' + username + ':' + password;
+    connectionString += '@ds153667.mlab.com:53667/heroku_79pr6g05';
+}
+
+
 require('./controllers/quizzes.controller.server')(app)
 require('./controllers/questions.controller.server')(app)
 require('./controllers/users.controller.server')(app)

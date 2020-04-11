@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7a92c53-2590-41ac-b7e7-5feef627ac94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/quiz-attempts.controller.server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daos/quiz-attempts.dao.server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/quiz-attempts/quiz-attempts.model.server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/quiz-attempts/quiz-attempts.schema.server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/questions/questions.schema.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/questions/questions.schema.server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +68,7 @@
       <workItem from="1585785571290" duration="5866000" />
       <workItem from="1585926552403" duration="26000" />
       <workItem from="1585927415606" duration="585000" />
-      <workItem from="1586473295920" duration="21210000" />
+      <workItem from="1586473295920" duration="21769000" />
     </task>
     <servers />
   </component>
