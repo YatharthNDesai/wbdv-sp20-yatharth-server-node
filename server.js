@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:27017/whiteboard-cs5610-sp20',
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin",
-               "http://localhost:4200");
+               "https://vast-mountain-24464.herokuapp.com/");
     res.header("Access-Control-Allow-Headers",
                "Origin, X-Requested-With, Content-Type, Accept");
     res.header("Access-Control-Allow-Methods",
@@ -23,5 +23,6 @@ app.use(function(req, res, next) {
 require('./controllers/quizzes.controller.server')(app)
 require('./controllers/questions.controller.server')(app)
 require('./controllers/users.controller.server')(app)
+require('./controllers/quiz-attempts.controller.server')(app)
 
 app.listen(process.env.PORT || 3000)
