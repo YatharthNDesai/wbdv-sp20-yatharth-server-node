@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/whiteboard-cs5610-sp20',
+mongoose.connect('mongodb://heroku_79pr6g05:j7gqjb791uiahoup0r3mk4t2g3@ds153667.mlab.com:53667/heroku_79pr6g05',
                  { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use(function(req, res, next) {
@@ -25,6 +25,7 @@ var connectionString = 'mongodb://127.0.0.1:27017/test';
 if(process.env.MLAB_USERNAME_WEBDEV) {
     var username = process.env.MLAB_USERNAME_WEBDEV;
     var password = process.env.MLAB_PASSWORD_WEBDEV;
+    console.log(username + password)
     connectionString = 'mongodb://' + username + ':' + password;
     connectionString += '@ds153667.mlab.com:53667/heroku_79pr6g05';
 }
